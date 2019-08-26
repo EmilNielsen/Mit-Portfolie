@@ -14,7 +14,7 @@ body {
 header {
 	height: var(--header-height);
 	width: 100%;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .65);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -27,6 +27,16 @@ header {
 	width: 75px;
 	margin: 0 0 0 12px;
 	border-radius: 100px;
+	transition: .3s all ease-in-out;
+}
+
+#headerLogo:hover {
+	cursor: pointer;
+	background-color: dodgerblue;
+}
+
+nav {
+	margin: 0 20px 0 0;
 }
 
 #navList {
@@ -37,6 +47,21 @@ header {
 .navItem {
 	list-style-type: none;
 	margin: 0 10px 0 10px;
+}
+
+.navLink {
+	color: white;
+	text-decoration: none;
+	font-family: arial;
+	margin: 0 12px 0 0;
+	font-size: 1.2rem;
+	transition: .3s all ease-in-out;
+}
+
+.navLink:hover {
+	cursor: pointer;
+	text-decoration-color: dodgerblue;
+	color: dodgerblue;
 }
 
 main {
