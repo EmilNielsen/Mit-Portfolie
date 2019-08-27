@@ -29,7 +29,8 @@ header {
 }
 
 #headerLogo {
-	background-image: url(/img/profile.jpg);
+	/* background-image: url(/img/profile.jpg); */
+	background-color: lime;
 	object-fit: contain;
 	background-position: center;
 	height: 75px;
