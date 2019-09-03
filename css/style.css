@@ -13,6 +13,9 @@
 
 body {
 	height: 100vh;
+	background-image: url(/img/about.png);
+	background-size: cover;
+	bg
 }
 
 /* HEADER */
@@ -20,7 +23,7 @@ body {
 header {
 	height: var(--header-height);
 	width: 100%;
-	background-color: white;
+	background-color: rgba(0, 0, 0, .75);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -61,14 +64,14 @@ nav {
 }
 
 .navLink {
-	color: black;
+	color: white;
 	text-decoration: none;
 	font-family: arial;
 	margin: 0 12px 0 0;
 	font-size: 1.2rem;
 	transition: .3s all ease-in-out;
 	position: relative;
-	text-shadow: 2px 1px 5px grey;
+	text-shadow: 0px 1px 5px grey;
 	text-transform: uppercase;
 }
 
@@ -113,7 +116,7 @@ main {
 	transform: translate(-50%, -50%);
 	background-color: rgba(50, 50, 50, .65);
 	padding: 1.2rem 1rem;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	color: white;
 	text-decoration: none;
 	font: 18px arial;
@@ -122,7 +125,8 @@ main {
 }
 
 .parallaxTitle:hover {
-	color: dodgerblue;
+	color: rgb(79, 165, 250);
+	background-color: rgba(50, 50, 50, .75);
 }
 
 .parallaxWeb {
@@ -143,14 +147,14 @@ main {
 footer {
 	height: var(--footer-height);
 	width: 100%;
-	background-color: white;
+	background-color: rgba(0, 0, 0, .75);
 }
 
 .copy {
 	text-align: center;
 	padding: 32px 0 0 0;
-	color: black;
-	text-shadow: 2px 1px 5px grey;
+	color: white;
+	text-shadow: 2px 1px 5px black;
 	text-transform: uppercase;
 	font-size: 16px;
 }
