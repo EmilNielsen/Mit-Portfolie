@@ -105,6 +105,10 @@ main {
 	/* box-shadow: 0 5px 15px 5px black; */
 }
 
+.parallaxImage:hover {
+	cursor: pointer;
+}
+
 .parallaxImage:last-of-type {
 	margin: 0;
 }
