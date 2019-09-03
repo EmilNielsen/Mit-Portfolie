@@ -11,11 +11,14 @@
 	display: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100vh;
 	background-image: url(/img/about.png);
 	background-size: cover;
-	bg
 }
 
 /* HEADER */
@@ -100,7 +103,10 @@ main {
 	background-size: cover;
 	position: relative;
 	margin: 0 auto 0 auto;
-	height: 500px;
+	min-height: auto;
+	max-height: calc(100% - var(--header-height) - var(--footer-height));
+	padding: 27% 0;
+	/* height: 500px; */
 	width: 100%;
 	/* box-shadow: 0 5px 15px 5px black; */
 }
@@ -133,18 +139,33 @@ main {
 	background-color: rgba(50, 50, 50, .75);
 }
 
-.parallaxWeb {
+#parallaxWeb {
 	background-image: url(/img/web.png);
-	min-height: 450px;
 }
 
-.parallax3d {
-	min-height: 450px;
+#scrollTo3d::before {
+	content: "//3d";
+	color: white;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 70%;
+	right: 5%;
+}
+
+#scrollToAbout::before {
+	content: "//About";
+	color: black;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 80%;
+	right: 5%;
+}
+
+#parallax3d {
 	background-image: url(/img/3d.png);
 }
 
-.parallaxAbout {
-	min-height: 450px;
+#parallaxAbout {
 	background-image: url(/img/about.png);
 }
 

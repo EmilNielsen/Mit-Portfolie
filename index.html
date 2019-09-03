@@ -9,7 +9,7 @@
 </head>
 <body>
 	
-	<header>
+	<header id="header">
 		<a href="" id="headerLogo"></a>
 		<nav>
 			<ul id="navList">
@@ -31,14 +31,17 @@
 
 	<main>
 		<div class="parallax">
-			<div class="parallaxImage parallaxWeb">
+			<div class="parallaxImage" id="parallaxWeb">
 				<a href="web.html" class="parallaxTitle">Web developer</a>
+				<a href="#parallax3d" id="scrollTo3d"></a>
 			</div>
-			<div class="parallaxImage parallax3d">
+			<div class="parallaxImage" id="parallax3d">
 				<a href="3d.html" class="parallaxTitle">3D artist</a>
+				<a href="#parallaxAbout" id="scrollToAbout"></a>
 			</div>
-			<div class="parallaxImage parallaxAbout">
+			<div class="parallaxImage" id="parallaxAbout">
 				<a href="about.html" class="parallaxTitle">About</a>
+				<a href="#header"></a>
 			</div>
 		</div>
 	</main>
