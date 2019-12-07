@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#artGrid {
+	display: grid;
+	background-color: lime;
+	grid-gap: 1rem;
+}
+
+#artGrid img {
+	width: 20%;
+}
