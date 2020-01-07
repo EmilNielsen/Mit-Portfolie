@@ -1,14 +1,139 @@
+:root {
+	--header-height: 100px;
+	--footer-height: 75px;
+}
+
 * {
+	box-sizing: border-box;
+}
+
+body {
 	margin: 0;
 	padding: 0;
+	background-image: url(/img/home_bg.png);
 }
 
-#artGrid {
-	display: grid;
+/*======================================================================*/
+/* HEADER */
+
+header {
+	height: var(--header-height);
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(0, 68, 255, 0.5), rgba(0, 24, 88, 0.5));
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	border-bottom: 1px solid black;
+	margin: 0;
+}
+
+#headerLogo {
+	/* background-image: url(/img/profile.jpg); */
 	background-color: lime;
-	grid-gap: 1rem;
+	object-fit: contain;
+	background-position: center;
+	height: 75px;
+	width: 75px;
+	margin: 0 0 0 12px;
+	border-radius: 100px;
+	transition: .3s all ease-in-out;
+	border: 2px solid black;
 }
 
-#artGrid img {
-	width: 20%;
+#headerLogo:hover {
+	cursor: pointer;
+	border-color: dodgerblue;
+}
+
+nav {
+	margin: 0 20px 0 0;
+}
+
+#navList {
+	display: flex;
+	flex-direction: row;
+}
+
+.navItem {
+	list-style-type: none;
+	margin: 0 10px 0 10px;
+}
+
+.navLink {
+	color: white;
+	text-decoration: none;
+	font-family: arial;
+	margin: 0 12px 0 0;
+	font-size: 1.2rem;
+	transition: .3s all ease-in-out;
+	position: relative;
+	text-shadow: 0px 1px 5px grey;
+	text-transform: uppercase;
+}
+
+.navLink:hover {
+	cursor: pointer;
+	text-decoration-color: dodgerblue;
+	color: dodgerblue;
+}
+
+/* /Header */
+/*======================================================================*/
+/* Main */
+
+#artRow {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 16px auto 24px auto;
+	padding: 0 4px;
+}
+
+.artColumn {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+#artRow .artColumn img {
+	width: 100%;
+	margin: 4px 0 0 0;
+	border-radius: 2px;
+	box-shadow: 2.5px 5px 10px 1px black;
+}
+
+@media screen and (max-width: 800px) {
+	.artColumn {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.artColumn {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/* /MAIN */
+/*======================================================================*/
+/* FOOTER */
+
+footer {
+	height: var(--footer-height);
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(0, 68, 255, 0.5), rgba(0, 24, 88, 0.5), rgba(0, 68, 255, 0.5));
+	/* background-color: rgba(0, 0, 0, .75); */
+}
+
+.copy {
+	text-align: center;
+	padding: 32px 0 0 0;
+	color: white;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
 }
